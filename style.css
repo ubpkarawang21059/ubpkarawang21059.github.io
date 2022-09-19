@@ -1,0 +1,22 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #505052;
+}
+.jumbotron span {
+  color: rgb(241, 238, 238);
+}
+#assignment {
+  background-color: #ededf3;
+}
+section {
+  padding-top: 5rem;
+}
+#kelas {
+  color: #ededf3;
+}
+#nim{
+  color: #ededf3;
+}
+.col {
+  margin-bottom: 20px;
+}
