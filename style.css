@@ -4,7 +4,7 @@
   padding-top: 6rem;
   background-color: #505052;
 }
-.jumbotron span {
+.jumbotron span { 
   color: rgb(241, 238, 238);
 }
 #assignment {
@@ -109,5 +109,26 @@ ul li {
   html {
     font-size: 14px;
   }
+}
+
+.unduh-pdf {
+  margin: 1rem 0; /* Menempatkan elemen di tengah secara horizontal */
+  padding: 10px 20px;
+  background-color: #303131;
+  color: #ffffff;
+  text-decoration: none; /* Perbaiki nilai `text-decoration`, "burlywood" bukan nilai yang valid */
+  border-radius: 5px;
+  text-align: center; /* Mengatur teks menjadi terpusat */
+  font-weight: bold;
+}
+.link-collab {
+  margin: 0 auto; /* Menempatkan elemen di tengah secara horizontal */
+  padding: 10px 20px;
+  background-color: #303131;
+  color: #ffffff;
+  text-decoration: none; /* Perbaiki nilai `text-decoration`, "burlywood" bukan nilai yang valid */
+  border-radius: 5px;
+  text-align: center; /* Mengatur teks menjadi terpusat */
+  font-weight: bold;
 }
 
