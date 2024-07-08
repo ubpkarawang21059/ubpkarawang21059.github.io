@@ -25,7 +25,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Quiz Data Mining</a>
+        <a class="navbar-brand" href="#">Data Mining</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -52,14 +52,12 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-    <section id="home"></section>
         <img src= "img/profile.jpg" alt="Muhamad Anggi Irawan" width="200" class="rounded-circle img-thumbnail"/>
         <h1 class="display-4"><span>Muhamad Anggi Irawan</span></h1>
         <p class="lead" data-aos="zoom-in-up" data-aos-offset="500" data-aos-duration="1000"><span>Mahasiswa | Programer</span></p> 
         <p class="lead" data-aos="zoom-in-up" data-aos-offset="500" data-aos-duration="1000"><span>NIM : 21416255201059</span></p>
         <p class="lead" data-aos="zoom-in-up" data-aos-offset="500" data-aos-duration="1000"><span>Kelas : IF21C</span></p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="0.1" d="M0,192L60,197.3C120,203,240,213,360,197.3C480,181,600,139,720,133.3C840,128,960,160,1080,176C1200,192,1320,192,1380,192L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </section>
     </section>
     <!-- akhir Jumbotron -->
 
@@ -78,51 +76,244 @@
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#505052" fill-opacity="0.1" d="M0,128L48,117.3C96,107,192,85,288,106.7C384,128,480,192,576,213.3C672,235,768,213,864,208C960,203,1056,213,1152,197.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
     <!-- akhir About -->
 
     <!-- My Assignment -->
-    <section id="assignment">
     <div class="accordion">
       <div class="accordion-item">
-        <div class="accordion-item-header"><i class="bi bi-suit-club-fill text-danger"></i>Apa itu Data Mining?</div>
+        <div class="accordion-item-header"><i class="bi bi-suit-club-fill text-dark"></i>DATA PROCESSING DAN DATA CLEANING</div>
         <div class="accordion-item-body">
           <div class="accordion-item-body-content">
-            Data mining adalah upaya mendapatkan informasi dari kumpulan data tertentu. Nantinya, informasi tersebut akan diolah dan digunakan sesuai dengan tujuan data mining yang ditentukan. Terutama bagi bisnis, upaya data mining penting untuk mengambil keputusan terbaik sesuai strategi bisnis yang akan dijalankan.
+            Data processing adalah proses pengolahan data mentah menjadi informasi yang berguna sedangkan Data cleaning adalah proses untuk mengidentifikasi dan memperbaiki atau menghapus data yang kotor atau tidak akurat dari dataset.
+          </div>
+          <div class="accordion-item-body-content">
+            1. Penanganan Nilai Hilang (Missing Value) : Setelah melakukan pencarian, ditemukan bahwa terdapat beberapa data yang memiliki nilai null pada kolom-kolom tertentu. Ini dapat mempengaruhi analisis, sehingga perlu dilakukan penanganan nilai hilang. Beberapa teknik yang dapat digunakan termasuk pengisian nilai hilang dengan rata-rata, median, atau mode dari kolom tersebut, atau penghapusan baris/kolom yang memiliki banyak nilai hilang.
+          </div>
+          <div class="accordion-item-body-content">
+            2. Identifikasi dan Penghapusan Duplikat : Setelah dilakukan identifikasi, beberapa baris dalam dataset ternyata merupakan duplikat. Langkah selanjutnya adalah menghapus duplikat tersebut untuk memastikan analisis dilakukan pada data yang bersih. Ini penting untuk mencegah bias dalam hasil analisis yang disebabkan oleh pengulangan data yang sama.
+          </div>
+          <div class="accordion-item-body-content">
+            3. Penanganan Nilai Ekstrem : Melalui analisis, teridentifikasi adanya nilai-nilai yang ekstrem dalam dataset. Nilai-nilai ini dapat mempengaruhi hasil analisis secara signifikan. Oleh karena itu, perlu dilakukan penanganan khusus terhadap nilai-nilai ekstrem ini. Teknik yang dapat digunakan termasuk transformasi data, penghapusan outlier, atau pengaturan batas atas dan bawah untuk data.
+          </div>
+          <div class="accordion-item-body-content">
+            4. Penanganan Kesalahan Tipe atau Format : Terdapat beberapa kesalahan tipe atau ketidaksesuaian format dalam dataset yang perlu diidentifikasi dan diperbaiki. Hal ini penting untuk memastikan konsistensi data dan akurasi analisis. Misalnya, memastikan bahwa semua tanggal dalam format yang sama, atau semua angka diformat dengan konsistensi desimal yang benar.
+          </div>
+          <div class="accordion-item-body-content">
+            5. Identifikasi Anomali atau Nilai Tidak Sesuai : Selama proses analisis, terdapat beberapa nilai yang tidak sesuai dengan aturan bisnis atau ilmu pengetahuan yang relevan. Penting untuk mengidentifikasi dan menangani anomali ini agar analisis dapat dilakukan dengan akurat. Ini dapat melibatkan validasi terhadap aturan-aturan tertentu dan koreksi data yang tidak sesuai.
+          </div>
+          <div class="accordion-item-body-content">
+            6. Pembersihan dan Pemrosesan Data Teks : Terdapat juga data teks dalam dataset yang perlu dibersihkan dan diproses. Ini termasuk penghapusan karakter khusus, konversi teks ke format standar (misalnya, huruf kecil semua), penghapusan stop words, dan mungkin juga penerapan stemming atau lemmatization untuk menghasilkan representasi yang lebih bersih dan seragam dari data teks. 
+          </div>
+          <div class="accordion-item-body-content">
+            Contoh Link Collab : <a href="https://colab.research.google.com/drive/1sYuoG8uX1Odj7Dmj3U2TM38IsZjc0Kel?usp=sharing" class="text-blue fw-bold">Link Google Colaboratory</a>
           </div>
         </div>
       </div>
       <div class="accordion-item">
-        <div class="accordion-item-header"><i class="bi bi-suit-club-fill text-danger"></i>Quiz Data Mining Analisis Data Transkrip Nilai dan Data Lulusan Mahasiswa</div>
+        <div class="accordion-item-header"><i class="bi bi-suit-club-fill text-dark"></i>DATA PREPARATION & VISUALIZATION</div>
         <div class="accordion-item-body">
-          <div class="accordion-item-body-content">
-            Pendahuluan Laporan ini menganalisis data transkrip nilai mahasiswa untuk memeriksa beberapa hal, seperti nilai IPS per semester per siswa, korelasi antara nilai IPS dan kelulusan tepat waktu, korelasi antara predikat kelulusan "Pujian" dengan kelulusan tepat waktu, dan hubungan antara durasi studi dan predikat kelulusan, serta perbandingan prestasi akademik berdasarkan jenis kelamin.
-          </div>
-          <div class="accordion-item-body-content">
-            Selengkapnya ada di Link di bawah ini untuk mendownload PDF lengkap laporan nya
-          </div>
+          <div class="accordion-item-body-content">1. Data preparation atau persiapan data adalah langkah-langkah yang dilakukan untuk mempersiapkan data mentah sebelum digunakan dalam analisis dan pemodelan. Tujuannya adalah memastikan bahwa data yang akan digunakan adalah bersih, konsisten, dan dalam format yang sesuai untuk analisis atau pelatihan model pembelajaran mesin. Proses ini melibatkan berbagai tahapan, seperti pembersihan data, transformasi data, dan pengurangan dimensi.</div>
+          <div class="accordion-item-body-content">Contoh kode untuk Data Preparation dalam Python menggunakan library pandas:</div>
+          <div class="accordion-item-body-content"><img src= "img/Data Preparation.png" alt="Google Collaboratory" width="700" weight="600" /></div>
+          <div class="accordion-item-body-content">2. Data visualization atau visualisasi data adalah proses penyajian data dalam bentuk grafik atau gambar, sehingga informasi yang terdapat dalam data dapat lebih mudah dipahami dan dianalisis. Visualisasi data membantu dalam mengidentifikasi pola, tren, dan anomali dalam data, serta mempermudah komunikasi hasil analisis.</div>
+          <div class="accordion-item-body-content">Contoh kode untuk Data Visualization dalam Python menggunakan library matplotlib:</div>
+          <div class="accordion-item-body-content"><img src= "img/Data Visualitation.png" alt="Google Collaboratory" width="700" weight="600" /></div>
         </div>
       </div>
       <div class="accordion-item">
-        <div class="accordion-item-header"><i class="bi bi-suit-club-fill text-danger"></i>Apa manfaat Data Mining?</div>
-          <div class="accordion-item-body">
-            <div class="accordion-item-body-content"> 1. Meningkatkan Kualitas Layanan </div>
-            <div class="accordion-item-body-content">2. Mendorong Penjualan</div>
-            <div class="accordion-item-body-content">3. Melakukan Analisis Risiko </div>
-            <div class="accordion-item-body-content">4. Mengoptimalkan Pengeluaran</div>
-            <div class="accordion-item-body-content">5. Bisa Lebih Memahami Konsumen</div>
-            <div class="accordion-item-body-content">6. Memastikan Produksi Berjalan Baik</div>
-            <div class="accordion-item-body-content">7. Mengelola Pasokan Bahan Baku Lebih Baik</div>
+        <div class="accordion-item-header"><i class="bi bi-suit-club-fill text-dark"></i>PRE-PROCESSING</div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">Pre-processing atau prapemrosesan adalah tahap awal dalam proses analisis data dan pembelajaran mesin (machine learning) yang bertujuan untuk mempersiapkan data mentah menjadi format yang sesuai untuk digunakan dalam model. Tahap ini sangat penting karena kualitas data yang digunakan akan sangat mempengaruhi kinerja dan akurasi model yang akan dibangun. Pre-processing mencakup berbagai teknik dan langkah-langkah untuk membersihkan, mengubah, dan menyusun data agar lebih mudah dianalisis.</div>
+          <div class="accordion-item-body-content">Beberapa langkah umum dalam pre-processing meliputi:</div>
+          <div class="accordion-item-body-content " >Pembersihan Data (Data Cleaning):
+            <ol style="padding-left: 1rem">
+              <li>Mengatasi Missing Values: Mengisi atau menghapus data yang hilang.</li>
+              <li>Menghilangkan Duplikasi: Menghapus data yang duplikat atau redundan.</li>
+              <li>Mengoreksi Kesalahan: Memperbaiki kesalahan dalam data, seperti kesalahan pengetikan atau inkonsistensi format.</li>
+            </ol>
           </div>
+          <div class="accordion-item-body-content"><img src= "img/Data Cleaning 1.png" alt="Link Google Collaboratory" width="700" weight="600" /></div>
+          <div class="accordion-item-body-content fw-bold" >Data Collection</div>
+          <div class="accordion-item-body-content"> Data collection adalah proses pengumpulan data dari berbagai sumber yang relevan dengan tujuan analisis. Contoh kode untuk data collection mungkin termasuk:</div>
+          <div class="accordion-item-body-content"><img src= "img/Data Cleaning 2.png" alt="Link Google Collaboratory" width="700" weight="600" /></div>
+          <div class="accordion-item-body-content fw-bold" >Transformasi Data (Data Transformation):</div>
+          <div class="accordion-item-body-content">Data transformation melibatkan pengubahan format atau struktur data untuk mempersiapkannya untuk analisis lebih lanjut
+            <ol style="padding-left: 1rem">
+              <li>Normalisasi dan Standardisasi: Mengubah skala data agar semua fitur memiliki skala yang sama, biasanya diperlukan untuk algoritma yang sensitif terhadap skala data.</li>
+              <li>Encoding Kategori: Mengubah data kategori menjadi format numerik menggunakan teknik seperti one-hot encoding atau label encoding.</li>
+              <li>Penskalaan (Scaling): Mengubah rentang nilai fitur agar sesuai dengan rentang tertentu, seperti antara 0 dan 1.</li>
+            </ol>
+          </div>
+          <div class="accordion-item-body-content"><img src= "img/Data Cleaning 3.png" alt="Link Google Collaboratory" width="700" weight="600" /></div>
+          <div class="accordion-item-body-content fw-bold" >Data Reduction</div>
+          <div class="accordion-item-body-content"> Data reduction adalah proses mengurangi jumlah atribut atau instance data tanpa menghilangkan informasi penting. 
+            <ol style="padding-left: 1rem">
+              <li>PCA (Principal Component Analysis): Teknik untuk mengurangi jumlah fitur dengan memproyeksikan data ke dimensi yang lebih rendah sambil mempertahankan variabilitas maksimum.</li>
+              <li>LDA (Linear Discriminant Analysis): Teknik yang mengurangi dimensi data berdasarkan variabel target untuk meningkatkan separabilitas antar kelas.</li>
+            </ol>
+          </div>
+          <div class="accordion-item-body-content"><img src= "img/Data Cleaning 4.png" alt="Link Google Collaboratory" width="700" weight="600" /></div>
+          <div class="accordion-item-body-content " >Dengan implementasi kode tersebut, data dapat diproses melalui serangkaian langkah pre-processing yang mencakup cleaning, collection, transformation, dan reduction sehingga siap untuk analisis lebih lanjut.</div>
         </div>
       </div>
-      <div class="unduh-pdf">
-        <a href="https://drive.google.com/file/d/1fKux7DcA__hnYBugf6LAoXBTABl54grM/view?usp=sharing" download class="unduh-link">Unduh PDF</a>
+      <div class="accordion-item">
+        <div class="accordion-item-header"><i class="bi bi-suit-club-fill text-dark"></i>SUPERVISED LEARNING (PREDIKSI) 30 ALGORITMA</div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content fw-bold" >1. Pengertian Supervised Learning:</div>
+          <div class="accordion-item-body-content">
+            Supervised Learning adalah salah satu metode dalam pembelajaran mesin (machine learning) di mana model dilatih menggunakan data yang sudah diberi label. Data berlabel berarti setiap data input memiliki output yang diketahui dan telah ditentukan sebelumnya. Proses pelatihan ini melibatkan pemetaan input ke output yang benar, dengan tujuan agar model dapat melakukan prediksi yang akurat pada data baru yang belum pernah dilihat sebelumnya.
+          </div>
+          <div class="accordion-item-body-content">
+            Dalam supervised learning, model dibimbing (supervised) dengan contoh-contoh dari data berlabel, sehingga dapat belajar dari pola-pola yang ada untuk kemudian digunakan dalam memprediksi atau mengklasifikasikan data yang tidak dikenal. Terdapat dua jenis utama tugas dalam supervised learning, yaitu:
+            <ol style="padding-left: 1rem">
+              <li>Klasifikasi : Di mana output yang diprediksi adalah kategori atau kelas (contohnya, deteksi email spam, diagnosis penyakit).</li>
+              <li>Regres i: Di mana output yang diprediksi adalah nilai kontinu (contohnya, prediksi harga rumah, prediksi nilai saham).</li>
+            </ol>
+          </div>
+          <div class="accordion-item-body-content fw-bold" >2. Proses Supervised Learning:</div>
+          <div class="accordion-item-body-content">
+            <ol style="padding-left: 1rem">
+              <li>Pengumpulan Data : Mengumpulkan data yang sudah diberi label.</li>
+              <li>Pembagian Data : Memisahkan data menjadi set pelatihan dan set pengujian.</li>
+              <li>Pelatihan Model : Melatih model dengan set pelatihan.</li>
+              <li>Evaluasi Model : Menguji kinerja model menggunakan set pengujian.</li>
+              <li>Prediksi : Menggunakan model yang sudah terlatih untuk membuat prediksi pada data baru.</li>
+            </ol>
+          </div>
+          <div class="accordion-item-body-content fw-bold" >3. Algoritma Supervised Learning:</div>
+          <div class="accordion-item-body-content"> Berikut adalah 30 algoritma prediksi yang umum digunakan dalam Supervised Learning:
+            <ol style="padding-left: 1rem">
+              <li>Linear Regression</li>
+              <li>Logistic Regression</li>
+              <li>Decision Tree</li>
+              <li>Random Forest</li>
+              <li>Support Vector Machine (SVM)</li>
+              <li>K-Nearest Neighbors (KNN)</li>
+              <li>Naive Bayes</li>
+              <li>Gradient Boosting Machines (GBM)</li>
+              <li>AdaBoost</li>
+              <li>XGBoost</li>
+              <li>LightGBM</li>
+              <li>CatBoost</li>
+              <li>Ridge Regression</li>
+              <li>Lasso Regression</li>
+              <li>Elastic Net</li>
+              <li>Polynomial Regression</li>
+              <li>Bayesian Linear Regression</li>
+              <li>Multi-layer Perceptron (MLP)</li>
+              <li>Convolutional Neural Network (CNN)</li>
+              <li>Recurrent Neural Network (RNN)</li>
+              <li>Long Short-Term Memory (LSTM)</li>
+              <li>Extreme Gradient Boosting (XGBoost)</li>
+              <li>Stochastic Gradient Descent (SGD)</li>
+              <li>Perceptron</li>
+              <li>Quadratic Discriminant Analysis (QDA)</li>
+              <li>Linear Discriminant Analysis (LDA)</li>
+              <li>Bagging</li>
+              <li>Voting Classifier</li>
+              <li>Stacking</li>
+              <li>Extra Trees</li>
+            </ol>
+          </div>
+          
+        </div>
       </div>
-      <div class="link-collab">
-        <a href="https://colab.research.google.com/drive/1vgPaoai0QIY5G0rX9cuWq3MitTMVG_aZ?usp=sharing" download class="unduh-link">Link Google Collab</a>
+      <div class="accordion-item">
+        <div class="accordion-item-header"><i class="bi bi-suit-club-fill text-dark"></i>DATA TRANSKIP NILAI DAN DATA LULUSAN DARI UNIVERSITAS MELALUI API</div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            Contoh Link Collab : <a href="https://colab.research.google.com/drive/1vgPaoai0QIY5G0rX9cuWq3MitTMVG_aZ?usp=sharing" class="text-blue fw-bold">Link Google Colaboratory</a>
+          </div>
+          <div class="accordion-item-body-content">
+            Contoh Link Collab : <a href="https://drive.google.com/file/d/1fKux7DcA__hnYBugf6LAoXBTABl54grM/view?usp=sharing" class="text-blue fw-bold">Link PDF</a>
+          </div>
+          <div class="accordion-item-body-content fw-bold" >Pendahuluan</div>
+          <div class="accordion-item-body-content"> Dalam laporan ini, kami akan menganalisis data transkrip nilai mahasiswa untuk mengeksplorasi beberapa aspek yang relevan dengan keberhasilan akademik mereka. Fokus utama analisis meliputi Indeks Prestasi Semester (IPS) per semester per mahasiswa, hubungan antara IPS dan lulusan tepat waktu, keterkaitan antara predikat kelulusan 'Pujian' dengan lulusan tepat waktu, hubungan antara durasi studi dan predikat kelulusan, serta perbandingan prestasi akademik berdasarkan jenis kelamin. Dengan menggali data ini, kami bertujuan untuk mendapatkan wawasan yang lebih mendalam tentang faktor-faktor yang memengaruhi keberhasilan akademik mahasiswa terutama dalam konteks lulus tepat waktu.</div>
+          <div class="accordion-item-body-content fw-bold" >Integrasi Data</div>
+          <div class="accordion-item-body-content"> Mengambil data transkrip nilai dari API dan mengonversinya menjadi DataFrame Pandas, kemudian menampilkan beberapa informasi tentang data tersebut. Untuk melanjutkan ke tahap pembersihan data, menambahkan kode untuk melakukan pembersihan seperti  mengidentifikasi dan mengatasi nilai yang hilang atau tidak konsisten, serta menangani data mahasiswa pindahan.</div>
+          <div class="accordion-item-body-content fw-bold" >IPS per Semester per Mahasiswa</div>
+          <div class="accordion-item-body-content"> Menghitung IPS per semester per mahasiswa dengan menjumlahkan nilai mata kuliah pada setiap semester dan membaginya dengan jumlah SKS yang diambil, memberikan gambaran kinerja akademik mahasiswa dari waktu ke waktu.</div>
+          <div class="accordion-item-body-content">Dengan Metode :
+            <ol style="padding-left: 1rem">
+              <li>Mengelompokkan data berdasarkan Nomor Induk Mahasiswa (NIM), semester, dan Nama Mata Kuliah</li>
+              <li>Menghitung nilai total untuk setiap semester berdasarkan data nilai total mata kuliah.</li>
+              <li>Menghitung jumlah SKS yang diambil untuk setiap semester.</li>
+            </ol>
+          </div>
+          <div class="accordion-item-body-content"><img src= "img/IPS 1.png" alt="IPS" width="700" weight="600" /></div>
+          <div class="accordion-item-body-content"><img src= "img/IPS 2.png" alt="IPS" width="700" weight="600" /></div>
+          <div class="accordion-item-body-content fw-bold" >Hubungan antara IPS dan Lulusan Tepat Waktu</div>
+          <div class="accordion-item-body-content"> untuk mengevaluasi apakah terdapat hubungan antara Indeks Prestasi Semester (IPS) atau nilai rata-rata mata kuliah dengan kelulusan tepat waktu. Setelah melakukan analisis, kami menemukan bahwa tidak terdapat korelasi yang signifikan antara IPS atau nilai rata-rata mata kuliah dengan lulusan tepat waktu. Hal ini menunjukkan bahwa dari data yang telah dianalisis, tidak ada bukti yang mendukung adanya hubungan yang kuat antara IPS atau nilai rata-rata mata kuliah dengan kemungkinan seseorang lulus tepat waktu.</div>
+          <div class="accordion-item-body-content fw-bold" >  Korelasi antara Predikat Kelulusan 'Pujian' dengan Lulusan Tepat Waktu</div>
+          <div class="accordion-item-body-content">Melalui analisis statistik, kami menemukan bahwa sebagian besar mahasiswa yang memperoleh predikat 'Pujian' lulus tepat waktu, sementara sebagian kecil dari mereka yang tidak memperoleh predikat 'Pujian' yang berhasil lulus tepat waktu.
+            Analisis menunjukkan bahwa terdapat korelasi negatif yang signifikan antara durasi studi dan predikat kelulusan. Mahasiswa dengan durasi studi yang lebih pendek cenderung mendapatkan predikat kelulusan yang lebih baik.</div>
+          <div class="accordion-item-body-content"><img src= "img/KORELASI.png" alt="KORELASI" width="700" weight="600" /></div>
+          <div class="accordion-item-body-content fw-bold" >Perbandingan Prestasi Akademik Berdasarkan Jenis Kelamin</div>
+          <div class="accordion-item-body-content">Rata-rata nilai total menunjukkan bahwa perempuan cenderung memiliki prestasi akademik yang sedikit lebih tinggi daripada laki-laki.</div>
+          <div class="accordion-item-body-content"><img src= "img/JENIS KELAMIN.png" alt="JK" width="700" weight="600" /></div>
+          <div class="accordion-item-body-content fw-bold" >Kriteria Penilaian</div>
+          <div class="accordion-item-body-content" >Dalam analisis ini, kami mempertimbangkan beberapa kriteria sebagai berikut:
+            <ol style="padding-left: 1rem">
+              <li>Kapasitas untuk menyelenggarakan dan menyucikan data. Kami membersihkan data dari informasi yang tidak lengkap dan menggabungkannya dengan sumber data lainnya untuk analisis yang komprehensif.</li>
+              <li>Efektivitas dalam menerapkan metode analisis statistik. Kami memanfaatkan beragam teknik statistik untuk mendapatkan pemahaman mendalam dari data.</li>
+              <li> Kemampuan analisis dalam mengidentifikasi pola dan tren yang penting. Melalui analisis, kami mencari pola dan tren yang signifikan untuk memperoleh wawasan yang dalam.</li>
+              <li>Kedalaman analisis dan kreativitas dalam eksplorasi data. Analisis kami menyelami berbagai aspek data dan mencoba untuk mengungkap wawasan baru.</li>
+              <li> Kesempurnaan dan kejelasan laporan akhir, termasuk penggunaan visualisasi data</li>
+            </ol>
+          </div>
+          <div class="accordion-item-body-content fw-bold" >Kesimpulan</div>
+          <div class="accordion-item-body-content">Berdasarkan analisis yang dilakukan, dapat disimpulkan bahwa terdapat
+            beberapa faktor yang mempengaruhi kinerja akademik mahasiswa, termasuk nilai IPS
+            atau IPK dari mahasiswa, Predikat kelulusan, durasi studi, dan jenis kelamin.</div>
+          <div class="accordion-item-body-content">Sekian laporan analisis data transkrip nilai mahasiswa dan data mahasiswa lulus
+            ini disusun. Semoga laporan ini dapat memberikan wawasan berguna dalam
+            pemahaman tentang hal yang mempengaruhi kinerja akademik mahasiswa.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-item-header"><i class="bi bi-suit-club-fill text-dark"></i>DATA MINING</div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">Penggunaan data mining telah menjadi kunci penting dalam menganalisis data besar untuk mendapatkan wawasan. Beberapa metodologi dalam proses data mining, termasuk CRISP-DM, SEMMA, dan CCC. Memahami langkah-langkahnya, dan melihat bagaimana memainkan peran penting dalam mendapatkan pemahaman yang mendalam dari data. Proses ini meliputi identifikasi tujuan bisnis, pemahaman data, persiapan data, pemodelan, evaluasi, dan penerapan.</div>
+          <div class="accordion-item-body-content fw-bold" >1. Data Mining</div>
+          <div class="accordion-item-body-content">Proses data mining adalah serangkaian langkah atau tahapan yang dilakukan untuk mengekstrak informasi yang berharga atau pola yang tersembunyi dari sekumpulan data. Berikut adalah tahapan-tahapan umum dalam proses data mining:
+            <ol style="padding-left: 1rem">
+              <li>Pemahaman Bisnis: Identifikasi tujuan bisnis dan kebutuhan informasi.</li>
+              <li>Pemahaman Data: Kumpulkan, pahami, dan eksplorasi data.</li>
+              <li>Persiapan Data: Bersihkan, transformasikan, dan bagi data.</li>
+              <li>Pemilihan Model: Pilih teknik atau model yang sesuai.</li>
+              <li>Pembangunan Model: Terapkan dan latih model pada data.</li>
+              <li>Evaluasi Model: Evaluasi kinerja model dan sesuaikan jika perlu.</li>
+              <li>Penyajian Informasi: Sajikan hasil secara visual dan diskusikan implikasi bisnis.</li>
+              <li>Implementasi: Terapkan hasil data mining dalam lingkungan bisnis.</li>
+              <li>Pemeliharaan: Pantau kinerja model dan perbarui jika diperlukan.</li>
+            </ol>
+          </div>
+          <div class="accordion-item-body-content fw-bold" >2. CRISP-DM (Cross-Industry Standard Process for Data Mining)</div>
+          <div class="accordion-item-body-content" >CRISP-DM adalah kerangka kerja yang terstruktur untuk menggambarkan serangkaian langkah-langkah dalam melakukan proyek data mining. Terdiri dari enam tahapan utama: Pemahaman Bisnis, Pemahaman Data, Persiapan Data, Pemodelan, Evaluasi, dan Penerapan. Metodologi ini fleksibel dan dapat disesuaikan dengan kebutuhan proyek data mining.</div>
+          <div class="accordion-item-body-content fw-bold" >3. SEMMA (Sample, Explore, Modify, Model, Assess)</div>
+          <div class="accordion-item-body-content" >SEMMA adalah pendekatan metodologi dalam analisis data yang dikembangkan oleh SAS Institute. Ini merupakan singkatan dari Sample, Explore, Modify, Model, dan Assess, yang masing-masing tahapannya memiliki peran penting dalam proses analisis data. Berikut adalah penjelasan singkat tentang setiap tahapan SEMMA:
+            <ol style="padding-left: 1rem">
+              <li>Sample: Memilih sampel data yang representatif.</li>
+              <li>Explore: Eksplorasi data untuk memahami karakteristiknya.</li>
+              <li>Modify: Merubah data jika diperlukan, seperti transformasi atau pengkodean.</li>
+              <li>Model: Membangun model untuk menganalisis data.</li>
+              <li>Assess: Mengevaluasi dan menguji model untuk memastikan kinerjanya yang baik.</li>
+            </ol>
+            </div>
+            <div class="accordion-item-body-content fw-bold" >4. CCC (Computation, Cognitive, and Communication):</div>
+          <div class="accordion-item-body-content" >CCC (Computation, Cognitive, and Communication) adalah pendekatan yang dikembangkan oleh Gregory Piatetsky-Shapiro dalam konteks proses data mining. Pendekatan ini menekankan tiga aspek utama yang diperlukan dalam penggunaan data mining secara efektif. Berikut adalah penjelasan untuk setiap elemen CCC:
+            <ol style="padding-left: 1rem">
+              <li>Computation: Penggunaan algoritma dan teknik komputasi untuk mengekstrak pola dari data.</li>
+              <li>Cognitive: Pemahaman konsep-konsep dan interpretasi hasil data mining.</li>
+              <li>Communication: Komunikasi hasil dan temuan kepada pemangku kepentingan yang relevan.</li>
+            </ol>
+            </div>
+            <div class="accordion-item-body-content" >Dalam kesimpulan, proses data mining merupakan serangkaian langkah yang sistematis dan penting dalam menggali wawasan berharga dari data. Dari pemahaman bisnis hingga implementasi dan pemeliharaan, setiap tahapan memiliki peran krusial dalam memastikan keberhasilan proses ini. Dengan memahami dan mengikuti langkah-langkah dengan cermat,  dapat memanfaatkan data mereka secara efektif untuk mengambil keputusan yang lebih baik dan memperoleh keunggulan kompetitif dalam lingkungan bisnis yang semakin kompleks. Oleh karena itu, penting untuk mengintegrasikan proses data mining ke dalam strategi secara keseluruhan untuk mencapai tujuan dan mendukung pertumbuhan jangka panjang</div>
+          </div>
+        </div>
       </div>
     </div>
-    </section>
     <!-- akhir Assignment -->
 
 
@@ -164,6 +355,9 @@
     </footer>
     <footer class="bg-dark text-white text-center pb-5">
         <p>My Campus Website :<i></i><a href="https://ubpkarawang.ac.id/" class="text-white fw-bold"> UBP KARAWANG</a></p>
+      </footer>
+    <footer class="bg-dark text-white text-center pb-5">
+        <p>My Lecturer Website :<i></i><a href="https://adirp.id/" class="text-white fw-bold">Adi Rizky Pratama, M.Kom.</a></p>
       </footer>
     <footer class="bg-dark text-white text-center pb-5">
       <p>My Instagram :<i></i><a href="https://www.instagram.com/anggi_irawan20/" class="text-white fw-bold"> @anggi_irawan20</a></p>
